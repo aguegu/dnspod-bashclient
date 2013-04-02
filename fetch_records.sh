@@ -2,12 +2,6 @@
 
 source info.sh
 
-echo "domains info:"
-
-curl -sk "https://dnsapi.cn/Domain.List" -d "$account" \
-	| egrep "<(id|name)" | egrep -o ">[^<]+<" | tr -d "<>" | xargs -n 2 echo
-
-
 echo "records info:"
 curl -sk "https://dnsapi.cn/Record.List" -d "$account&domain_id=$domain_id" > /tmp/record.xml.$$
 
