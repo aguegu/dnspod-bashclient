@@ -31,6 +31,7 @@ How to use:
 In dialy use, especially when your ADSL moden reconnects, just run dnspod-bashclient.sh would be sufficient. fetch_*.sh
 are just helpers to get the configure info.
 
+* info.sh is ignored by git to protect security. The structure is identical to info_example.sh
 
 fetch.sh Get Domain_id and Record_id which are required in further operation, this script will generate a tab formated output according to the xml response.
 
